@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import ServicesCards from '../Components/ServicesCards/ServicesCards';
+
 export default function services() {
   return (
     <div>
@@ -10,9 +11,9 @@ export default function services() {
           <p>Get more traffic, time and peace of mind thanks to a simple setup</p>
           <Link to="/">Home page</Link>
         </div>
-        <div className="cards">
+        <div className="Cards">
          <h2>our Services</h2>
-         <div className="cardsDroup">
+         <div className="CardsGroup">
          <ServicesCards
          image={require('../assets/imagecard2.png')}
          title="React for Designers"
