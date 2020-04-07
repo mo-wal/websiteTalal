@@ -10,7 +10,8 @@ export default function NavbarMain() {
   return (
 
    <>
-   <Navbar collapseOnSelect expand="lg" className='nav' sticky="top" >
+   <Navbar collapseOnSelect expand="lg" className='nav' sticky="top" 
+   style={{background: "rgba(255, 255, 255 , 1)"}} >
   <Navbar.Brand href="/">Home</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
