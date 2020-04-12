@@ -1,11 +1,14 @@
 import React from 'react';
-import { Button, Nav, Form, FormControl,Navbar,Jumbotron} from 'react-bootstrap';
+import { Button, Nav, Form, FormControl,Navbar,Jumbotron,Container} from 'react-bootstrap';
+import { ParallaxButton, ParallaxWrapper} from 'react-parallax-button'
 
 import '../index.css'
 
 import Cards from '../Components/Cards';
 import Media from '../Components/Media';
 import Particles from 'react-particles-js';
+import Parllax from '../Components/Parllax';
+import Footer from '../Components/Footer';
 
 export default function Home() {
   return (
@@ -22,9 +25,15 @@ export default function Home() {
 </Jumbotron> 
    <Cards />
    <br></br>
+   <Parllax />
+   <br></br>
    <Media />
+   <br></br>
    
-  <Particles />
+  
+<Footer />
+
+  
    </>
   );
 }
