@@ -1,7 +1,26 @@
-import React from 'react'
-
+import React from 'react';
+import OurworksCards from '../Components/OurworksCards/OurworksCards';
 export default function OurWorks() {
+     
     return (
-        <h1>hello from ourworks page</h1>
+        <>
+        <div className="OurWorksHero">
+            <div className="OurWorksHeroGroup">
+  
+            </div>
+            
+        </div>
+      
+        <OurworksCards/>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </>
     )
 }

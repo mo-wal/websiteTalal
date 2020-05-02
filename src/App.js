@@ -12,12 +12,12 @@ import OurCustomers from './pages/ourcustomers';
 
 //import components
 import Navbar from './Components/navbar';
-
+import Footer from './Components/footer/Footer';
 
 
 function App() {
   return (
-
+   <>
   <Router>
     <Navbar/>
   <Switch>
@@ -45,6 +45,8 @@ function App() {
   </Switch>
   </Router>
     
+    <Footer />
+    </>
   )
     
 

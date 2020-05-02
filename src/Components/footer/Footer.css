@@ -1,0 +1,128 @@
+.footer{
+    background: #FFB833;
+    color: #050A27;
+    height: 400px;
+    position: relative;
+}
+.footer .footer-content{
+
+    border-bottom: 1px solid #050A27 ;
+    height: 350px;
+    display: flex;
+}
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    
+}
+.footer .footer-content h1 ,.footer .footer-content h2{
+    color: #050A27;
+    
+}
+.footer .footer-content .about img {
+    width: 100px;
+    height: 100px;
+    
+}
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.footer .footer-content .about .socials a{
+    
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    
+    color: #050A27;
+}
+.footer .footer-content .about .socials a:hover{
+    
+    color: cornflowerblue;
+}
+.footer .footer-content .links ul li a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #050A27;
+}
+.footer .footer-content .links ul li a:hover{
+color: cornflowerblue;
+text-decoration: none;
+
+}
+.footer .footer-content .form .contact-input{
+    display: block;
+    width: 300px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .7rem 1.2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 5px;
+}
+.hello{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+    background: #050A27;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.footer .footer-bottom{
+    background: #D7910A;
+    color: #000;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 15px;
+}
+
+@media (max-width: 1060px){
+    .footer .footer-content{
+
+        border-bottom: none ;
+        height: 350px;
+        display: grid;
+    }
+    .footer .footer-content .footer-section{
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 25px;
+        
+    }
+    .footer{
+        background: #FFB833;
+        color: #050A27;
+        height: 1000px;
+        position: relative;
+    }
+}
+@media (max-width: 375px){
+    .footer .footer-content{
+
+        border-bottom: none ;
+        height: 350px;
+        display: grid;
+    }
+    .footer .footer-content .footer-section{
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 25px;
+        
+    }
+    .footer{
+        background: #FFB833;
+        color: #050A27;
+        height: 1000px;
+        position: relative;
+    }
+}

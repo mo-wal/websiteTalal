@@ -148,7 +148,7 @@ a{
   }
   .SectionText{
     position: absolute;
-    margin: 180px 10px 10px 5px;
+    margin: 180px 10px 10px -30px;
     
   }
   .spaceServices{
@@ -188,10 +188,465 @@ a{
   
 }
 
+.AboutHero{
+  height: 400px;
+  background: url('./assets/aboutusImage1.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.AboutHeroGroup{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.AboutHero a{
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 255, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.AboutHero a:hover{
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+.aboutSection{
+  margin: 60px 140px 60px 0px ;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.aboutsectionImg img{
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  right: 50%;
+   
+}
+.aboutsecttionBoxtext{
+  background:#FFB833; 
+  margin: 30px 120px 50px 0px;
+  
+}
+.aboutsecttionBoxtext p{
+  padding: 30px 30px 15px 30px;
+  color:#006C86;
+}
+.aboutSection2{
+  margin: 60px 10px 60px 90px ;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.aboutsectionImg2 img{
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  left: 47%;
+   
+}
+.aboutsecttionBoxtext2{
+  background:#FFB833; 
+  margin: 30px 30px 50px 130px;
+  
+}
+.aboutsecttionBoxtext2 p{
+  padding: 30px 30px 15px 30px;
+  color:#006C86;
+}
+
+.aboutHead{
+  background: #FFB833;
+  padding: 15px;
+}
+
+.aboutHead h2{
+  text-align: center;
+  text-transform: capitalize;
+  color: #050A27;
+}
+.aboutSection3{
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  
+}
+.aboutsectionImg3 img{
+  width: 450px;
+  height: 300px;
+   margin: 0px 0px 0px 80px;
+   
+}
+
+.aboutsecttionBoxtext3 p{
+  padding: 10px 150px 0px 0px;
+  color:#006C86;
+}
+
+@media (max-width: 1060px) {
+  .aboutSection{
+    
+   margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  .aboutsectionImg img{
+    margin: 20px;
+    position: static;
+    
+     
+  }
+  .aboutsecttionBoxtext{
+    background:#FFB833; 
+    margin: 0px  20px 20px 20px;
+    
+    
+  }
+  .aboutsecttionBoxtext p{
+    
+    color:#006C86;
+  }
+  .aboutSection2{
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  .aboutsectionImg2 img{
+    margin: 20px 20px 20px -70px;
+    position: static;
+    
+     
+  }
+  .aboutsecttionBoxtext2{
+    margin: 0px  20px 20px -70px;
+    
+  }
+  .aboutsecttionBoxtext2 p{
+    
+    color:#006C86;
+  }
+  
+  .aboutHead{
+    background: #FFB833;
+    padding: 15px;
+  }
+  
+  .aboutHead h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: #050A27;
+  }
+  .aboutSection3{
+    margin: 10px;
+    
+    grid-template-columns: repeat(1, 1fr);
+    
+    
+  }
+  .aboutsectionImg3 img{
+    
+     margin: 0px 0px 0px -30px;
+     
+  }
+  
+  .aboutsecttionBoxtext3 p{
+    padding: 10px 60px 0px 0px;
+    color:#006C86;
+  }
+}
+@media (max-width: 375px){
+
+  .aboutSection{
+    margin: 10px;
+   
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  .aboutsectionImg img{
+    margin: 20px 0px 20px 0px;
+    width: 350px;
+    height: 200px;
+    position: static;
+    
+     
+  }
+  .aboutsecttionBoxtext{
+    background:#FFB833; 
+    margin: 0px;
+    
+    
+  }
+  .aboutsecttionBoxtext p{
+    
+    color:#006C86;
+  }
+  .aboutSection2{
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  .aboutsectionImg2 img{
+    width: 350px;
+    height: 200px;
+    margin: 20px 0px 0px 0px;
+    position: static;
+    
+     
+  }
+  .aboutsecttionBoxtext2{
+    margin: 0px;
+    
+  }
+  .aboutsecttionBoxtext2 p{
+    
+    color:#006C86;
+  }
+  
+  .aboutHead{
+    background: #FFB833;
+    padding: 15px;
+    
+  }
+  
+  .aboutHead h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: #050A27;
+  }
+  .aboutSection3{
+    margin: 10px;
+    
+    grid-template-columns: repeat(1, 1fr);
+    
+    
+  }
+  .aboutsectionImg3 img{
+    width: 350px;
+    height: 200px;
+     margin: 0px;
+     
+  }
+  
+  .aboutsecttionBoxtext3 p{
+    padding: 10px 60px 0px 0px;
+    color:#006C86;
+  }
+
+}
 
 
 
+.OurWorksHero{
+  height: 650px;
+  background: url('./assets/ourworksImage.jpg');
+  background-size: cover;
+  background-position: center;
 
+}
+
+.OurWorksHeroGroup{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.OurWorksHero a{
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 255, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.OurWorksHero a:hover{
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+.space{
+  height: 50px;
+}
+.space1{
+  height: 100px;
+}
+.homeheadTitle{
+ background-color: #FFB833;
+ padding: 40px;
+}
+.homeheadTitle h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: #006C86;
+}
+.homeheadTitle p{
+  text-align: center;
+  text-transform: capitalize;
+  color: #006C86;
+  padding-top: 10px;
+}
+.homeSection{
+  padding: 50px;
+}
+.homeSection2{
+  padding: 50px;
+}
+.mediahome img {
+  width: 500px;
+  height: 150px;
+}
+.mediahome2 img {
+  width: 400px;
+  height: 400px;
+}
+
+.SectionTexthome{
+  padding: 15px 100px 50px 100px;
+}
+
+.SectionTexthome h5{
+  margin: 0;
+  font-size: 45px;
+  text-transform: capitalize;
+  line-height: 1.2;
+  animation: HeroAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+.SectionTexthome p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.5);
+  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+
+.SectionTexthome a{
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 255, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.SectionTexthome a:hover{
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+.SectionTexthome2{
+  padding: 15px 100px 50px 100px;
+}
+
+.SectionTexthome2 h5{
+  margin: 0;
+  font-size: 45px;
+  text-transform: capitalize;
+  line-height: 1.2;
+  animation: HeroAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+.SectionTexthome2 p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.5);
+  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+
+.SectionTexthome2 a{
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 255, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.SectionTexthome2 a:hover{
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1060px) {
+  .mediahome img {
+    width: 350px;
+    height: 100px;
+    
+    
+  }
+  .mediahome2 img {
+    width: 350px;
+    height: 350px;
+    margin: -250px 0px 0px -260px;
+    
+  }
+  .SectionTexthome{
+    
+    margin: 80px 10px 10px -400px; 
+  }
+  .SectionTexthome2{
+    
+    margin: 0px 0px 10px 0px;
+    padding: 70px 0px 0px 130px;
+  }
+  .homeSection2{
+    padding: 250px 40px 50px 0px; 
+  }
+  
+}
+@media (max-width: 375px) {
+  .mediahome img {
+    width: 300px;
+    height: 100px;
+    padding-right: 5px;
+    
+  }
+  .mediahome2 img {
+    width: 300px;
+    height: 300px;
+    
+  }
+  .SectionTexthome{
+    
+    margin: 150px 10px 10px -100;
+    
+    
+  }
+  .SectionTexthome2{
+    
+    margin: 0px 0px 10px 0px;
+    padding: 70px 0px 0px 80px;
+  }
+  .homeSection2{
+    padding: 250px 20px 50px 0px; 
+  }
+}
+.homeform{
+  background: #F0F0F0 ;
+  padding: 50px 0 50px 0;
+}
 @keyframes HeroAnimation {
   0% {
     opacity: 0;

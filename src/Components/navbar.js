@@ -1,8 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Nav, Form, FormControl,Navbar} from 'react-bootstrap';
-import '../index.css'
-
+import {Link} from 'react-router-dom';
 
 export default function NavbarMain() {
   
@@ -18,12 +17,13 @@ export default function NavbarMain() {
    
    
    }} >
-  <Navbar.Brand href="/">Home</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/Services">Services</Nav.Link>
-      <Nav.Link href="#pricing">About us</Nav.Link>
+      <Nav.Link  as={Link} to="/services">Services</Nav.Link>
+      <Nav.Link as={Link} to="/about-us">About us</Nav.Link>
+      <Nav.Link as={Link} to="/our-works">Our Works</Nav.Link>
      
     </Nav>
     <Nav>

@@ -1,39 +1,98 @@
 import React from 'react';
-import { Button, Nav, Form, FormControl,Navbar,Jumbotron,Container} from 'react-bootstrap';
-import { ParallaxButton, ParallaxWrapper} from 'react-parallax-button'
-
+import { Button, Nav, Form, Container,Col,Row,Media} from 'react-bootstrap';
+import { ParallaxButton, ParallaxWrapper} from 'react-parallax-button';
+import {Link} from 'react-router-dom';
 import '../index.css'
 
 import Cards from '../Components/Cards';
-import Media from '../Components/Media';
+import MediaCo from '../Components/Media';
 import Particles from 'react-particles-js';
 import Parllax from '../Components/Parllax';
-import Footer from '../Components/Footer';
+import Corusolslider from '../Components/Corusolslider'
 
 export default function Home() {
   return (
       <>
-          <Jumbotron style={{backgroundColor:'#FFB833'}}>
-  <h1>We are XO Company</h1>
-  <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
-  </p>
-  <p>
-    <Button variant="primary">Learn more</Button>
-  </p>
-</Jumbotron> 
-   <Cards />
-   <br></br>
-   <Parllax />
-   <br></br>
-   <Media />
-   <br></br>
-   
+    <Corusolslider/>
+    <div className="space"></div>
+    <Cards />
+    <div className="space1"></div>
+    <div className="homeheadTitle">
+      <h2>The Glome Effect</h2>
+      <p>How our approach is preparing conflict affected youth for the future of work</p>
+    </div>
+    <div className="space"></div>
+    <div className="homeSection">
+           
+           <Media className="mediahome">
+           <img
+           className="mr-3"
+           src={require('../assets/homemediaImage.png')}
+           alt="Generic placeholder"
+           />
+           <Media.Body className="SectionTexthome">
+           <h5>Media Heading</h5>
+           <p>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+            ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+            tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+            Donec lacinia congue felis in faucibus.
+           </p>
+           <Link to="/">Contact us</Link>
+           </Media.Body>
+           </Media>
   
-<Footer />
+           </div>
+           <div className="space"></div>
+           <Parllax />
+           <div className="space"></div>
+           <div className="homeSection2">
+             
+           <Media className="mediahome2">
+           <Media.Body className="SectionTexthome2">
+           <h5>Media Heading</h5>
+           <p>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+            ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+            tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+            Donec lacinia congue felis in faucibus.
+           </p>
+           <Link to="/">See Our Templates</Link>
+           </Media.Body>
+  
+           <img
+           className="mr-3"
+           src={require('../assets/homemediaImage2.png')}
+           alt="Generic placeholder"
+           />
+           
+           </Media>
+  
+           </div>
+           <div className="space"></div>
+           <div className="homeform">
+           <Container>
 
-  
+  <Row>
+    <Col></Col>
+    <Col>
+           <Form>
+  <Form.Group controlId="formBasicEmail">
+    
+    <Form.Control type="email" placeholder="Enter email" />
+    
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+</Col>
+    <Col></Col>
+  </Row>
+</Container>
+
+           </div>
+   
    </>
   );
 }
