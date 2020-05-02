@@ -11,26 +11,26 @@ export default function NavbarMain() {
    <>
    <Navbar collapseOnSelect expand="lg" className='nav'  
    style={{position: "fixed",
-   background:"rgba(255, 255 ,255 , 0.8)",
+   background:"white",
    width: "100%",
    zIndex:"100",
+   borderBottom: "1px solid rgba(0, 0, 0, 0.3)",
+   boxShadow: "0 20px 40px rgba(0,0,0, 0.15)"
    
    
    }} >
-  <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/"> <img src={require('../assets/navbarlogo.png')}/></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link  as={Link} to="/services">Services</Nav.Link>
-      <Nav.Link as={Link} to="/about-us">About us</Nav.Link>
-      <Nav.Link as={Link} to="/our-works">Our Works</Nav.Link>
+      
      
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
+    <Nav.Link  as={Link} to="/"><span><i class="fas fa-home"></i> &nbsp; Home</span></Nav.Link>
+      <Nav.Link  as={Link} to="/services"><span><i class="fas fa-clipboard-list"></i> &nbsp; Services</span></Nav.Link>
+      <Nav.Link as={Link} to="/about-us"><span><i class="fas fa-address-card"></i> &nbsp; About us</span></Nav.Link>
+      <Nav.Link as={Link} to="/our-works"><span><i class="fas fa-file-code"></i> &nbsp; Our Works</span></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
