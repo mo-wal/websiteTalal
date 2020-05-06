@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
 
 //imports pages
 import Home from './pages/home';
@@ -19,7 +20,9 @@ function App() {
   return (
    <>
   <Router>
+  <ScrollToTop />
     <Navbar/>
+    <br></br>
     <br></br>
     <br></br>
   <Switch>
